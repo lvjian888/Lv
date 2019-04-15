@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bw.mapper.DepMapper">
+    <select id="getlist" resultType="map">
+      select a.id,a.sid,a.name,b.name as sname,a.ms from dep a left join dep b on a.sid=b.id where a.name like '%${name}%'
+    </select>
+    <select id="getdep" resultType="Dep">
+       select * from dep
+    </select>
+    <insert id="add">
+    insert into dep set name=#{name},sid=${sid},ms=#{ms}
+    </insert>
+  <update id="update">
+   update dep set name=#{name},sid=${sid},ms=#{ms} where id=${id}
+  </update>
+  <delete id="del">
+  delete from dep where id in(${value})
+  </delete>
+</mapper>
