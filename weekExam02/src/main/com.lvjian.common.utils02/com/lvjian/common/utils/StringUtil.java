@@ -1,7 +1,7 @@
-package myUtils;
+package com.lvjian.common.utils;
 
 import org.apache.commons.lang.StringUtils;
-
+//创建StringUtil集合工具类及方法
 public class StringUtil {
 	public static boolean hasText(String src){
 	    

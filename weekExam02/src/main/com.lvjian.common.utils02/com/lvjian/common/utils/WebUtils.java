@@ -1,4 +1,4 @@
-package myUtils;
+package com.lvjian.common.utils;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-
+//创建WebUtil集合工具类及方法
 @Controller
 public class WebUtils {
 	@RequestMapping("a")//获取url上的参数，返回字符串值类型，如果没有该参数则返回默认值

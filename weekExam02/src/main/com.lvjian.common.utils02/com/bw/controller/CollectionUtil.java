@@ -3,7 +3,7 @@ package com.bw.controller;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
-
+//创建CollectionUtil集合工具类及方法
 public class CollectionUtil {
 
 	
